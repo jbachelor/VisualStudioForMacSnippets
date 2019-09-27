@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>xm</Shortcut>
+      <_Description>Xaml Compilation Attribute at assembly level</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables />
+    <Code><![CDATA[[assembly: XamlCompilation(XamlCompilationOptions.Compile)]$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

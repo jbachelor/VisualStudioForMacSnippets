@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>bpp</Shortcut>
+      <_Description>Bindable Property</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="PropertyName">
+        <Default>PropertyName</Default>
+      </Variable>
+      <Variable name="PropertyDataType">
+        <Default>string</Default>
+      </Variable>
+      <Variable name="ClassName">
+        <Default>ClassName</Default>
+      </Variable>
+      <Variable name="DefaultPropertyValue">
+        <Default>string.Empty</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[public static readonly BindableProperty $PropertyName$Property = 
+    BindableProperty.Create(nameof($PropertyName$), typeof($PropertyDataType$), typeof($ClassName$), $DefaultPropertyValue$);
+
+public $PropertyDataType$ $PropertyName$
+{
+    get { return ($PropertyDataType$)GetValue($PropertyName$Property); }
+    set { SetValue($PropertyName$Property, value); }
+} 
+$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

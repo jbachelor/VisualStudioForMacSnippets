@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>propp</Shortcut>
+      <_Description>Prism property</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="type" isIdentifier="true">
+        <Default>DataType</Default>
+      </Variable>
+      <Variable name="fieldName" isIdentifier="true">
+        <Default>fieldName</Default>
+      </Variable>
+      <Variable name="PropertyName" isIdentifier="true">
+        <Default>PropertyName</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[private $type$ _$fieldName$;
+public $type$ $PropertyName$ 
+{
+    get { return _$fieldName$; }
+    set { SetProperty(ref _$fieldName$, value); }
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

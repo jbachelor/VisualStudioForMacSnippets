@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>sdw</Shortcut>
+      <_Description>Static method debug writeline</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="ThisClassName">
+        <Default>ThisClass</Default>
+      </Variable>
+      <Variable name="ThisMethodName">
+        <Default>ThisMethod</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[Debug.WriteLine($$"**** {nameof($ThisClassName$)}.{nameof($end$)}");]]></Code>
+  </CodeTemplate>
+</CodeTemplates>
