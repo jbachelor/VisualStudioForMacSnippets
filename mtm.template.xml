@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>mtm</Shortcut>
+      <_Description>Test method - Microsoft style</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="DescribeYourTest">
+        <Default>MyAwesomeStuff</Default>
+      </Variable>
+      <Variable name="SetupYourTest">
+        <Default>Setup</Default>
+      </Variable>
+      <Variable name="CallMethodUnderTest">
+        <Default>Call MUT</Default>
+      </Variable>
+      <Variable name="MakeSureGoodStuffHappens">
+        <Default>Assertions</Default>
+      </Variable>
+      <Variable name="&quot;**** {this.GetType().Name}.{nameof(Test">
+        <Default>notset</Default>
+      </Variable>
+      <Variable name=")}&quot;);&#xA;    /* Arrange: &#xA;    *  ">
+        <Default>notset</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[[TestMethod]
+public void Test$DescribeYourTest$()
+{
+    /* Arrange: 
+    *  $end$
+    */
+    
+
+    /* Act: 
+    *  
+    */
+
+
+    /* Assert: 
+    *  
+    */
+
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

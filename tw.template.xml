@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>tw</Shortcut>
+      <_Description>Trace.WriteLine</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="CurrentMethod">
+        <Default>CurrentMethodName</Default>
+      </Variable>
+      <Variable name="&quot;**** {this.GetType().Name}.{nameof(">
+        <Default>notset</Default>
+      </Variable>
+      <Variable name=")}&quot;);">
+        <Default>notset</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[Trace.WriteLine($"**** {this.GetType().Name}.{nameof($CurrentMethod$)}");$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

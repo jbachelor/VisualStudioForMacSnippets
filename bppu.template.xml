@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CodeTemplates version="3.0">
   <CodeTemplate version="2.0">
     <Header>
       <_Group>Custom</_Group>
       <Version />
       <MimeType>text/x-csharp</MimeType>
-      <Shortcut>bpp</Shortcut>
-      <_Description>Bindable Property</_Description>
+      <Shortcut>bppu</Shortcut>
+      <_Description>Upside-Down Bindable Property</_Description>
       <TemplateType>Expansion</TemplateType>
     </Header>
     <Variables>
@@ -23,13 +23,13 @@
         <Default>string.Empty</Default>
       </Variable>
     </Variables>
-    <Code><![CDATA[public static readonly BindableProperty $PropertyName$Property = 
-            BindableProperty.Create(nameof($PropertyName$), typeof($PropertyDataType$), typeof($ClassName$), $DefaultPropertyValue$);
-public $PropertyDataType$ $PropertyName$
+    <Code><![CDATA[public $PropertyDataType$ $PropertyName$
 {
     get { return ($PropertyDataType$)GetValue($PropertyName$Property); }
     set { SetValue($PropertyName$Property, value); }
 } 
+public static readonly BindableProperty $PropertyName$Property = 
+    BindableProperty.Create(nameof($PropertyName$), typeof($PropertyDataType$), typeof($ClassName$), $DefaultPropertyValue$);
 $end$]]></Code>
   </CodeTemplate>
 </CodeTemplates>

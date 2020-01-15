@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>utm</Shortcut>
+      <_Description>UITest template</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="TestName">
+        <Default>TestName</Default>
+      </Variable>
+      <Variable name="&quot;**** {this.GetType().Name}.{nameof(">
+        <Default>notset</Default>
+      </Variable>
+      <Variable name=")}&quot;);&#xA;    /*&#xA;    * Arrange:&#xA;    * ">
+        <Default>notset</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[[Test]
+public void $TestName$()
+{
+    Console.WriteLine($"**** {this.GetType().Name}.{nameof($TestName$)}");
+    /*
+    * Arrange:
+    * $end$
+    */
+
+
+    /*
+    * Act:
+    * 
+    */
+
+
+    /*
+    * Assert:
+    * 
+    */
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

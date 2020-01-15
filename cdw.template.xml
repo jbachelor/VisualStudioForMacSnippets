@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>cdw</Shortcut>
+      <_Description>Debug.WriteLine for ctor</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="&quot;**** {this.GetType().Name}:  ctor&quot;);">
+        <Default>notset</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[Debug.WriteLine($"**** {this.GetType().Name}:  ctor");$end$]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

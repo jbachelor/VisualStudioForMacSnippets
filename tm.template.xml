@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>Custom</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>tm</Shortcut>
+      <_Description>Test method</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="DescribeYourTest">
+        <Default>DescribeYourTest</Default>
+      </Variable>
+      <Variable name="Test_Name">
+        <Default>Test_Name</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[[Test]
+public void $Test_Name$()
+{
+    /* Arrange: 
+    *  $end$
+    */
+
+
+    /* Act: 
+    *  
+    */
+
+
+    /* Assert: 
+    *  
+    */
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>
