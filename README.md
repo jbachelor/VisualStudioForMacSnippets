@@ -8,4 +8,4 @@ I have yet to find a way to change the path of where custom snippets are stored,
 __~/Library/VisualStudio/8.0/Snippets__
 
 ## ToDo:
-* Wouldn't it be cool to have a little shell script in this repo that would automatically copy these snippets into the current location where VS4Mac looks for them (eg, "~/Library/VisualStudio/8.0/Snippets as of 2020.01.15)? Yup. That'd be cool.
+* Wouldn't it be cool to have a little shell script in this repo that would automatically copy these snippets into the current location where VS4Mac looks for them (eg, `~/Library/VisualStudio/8.0/Snippets` as of 2020.01.15)? Yup. That'd be cool.
